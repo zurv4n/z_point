@@ -6,8 +6,6 @@ print('z_point loaded')
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
-        -- https://github.com/mja00/redm-shit/blob/master/nuiweaponspawner/config.lua
-        -- L
         if IsControlJustPressed(0,keypress) and IsInputDisabled(0)  then
             local ped = PlayerPedId()
             if DoesEntityExist(ped) and not IsEntityDead(ped) then
